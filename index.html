@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Typing Speed Test</h1>
+
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider"></span>
+      </label>
+      <span id="theme-label">🌙 Dark Mode</span>
+    </div>
+
+    <div class="difficulty-container">
+      <label for="difficulty">Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy 🟢</option>
+        <option value="medium" selected>Medium 🟡</option>
+        <option value="hard">Hard 🔴</option>
+      </select>
+    </div>
+
+    <div class="quote-box" id="quote"></div>
+
+    <textarea id="input" rows="3" placeholder="Start typing here..."></textarea>
+
+    <div class="stats">
+      <div>Time Left: <span id="time">60</span>s</div>
+      <div>WPM: <span id="wpm">0</span></div>
+      <div>Accuracy: <span id="accuracy">0</span>%</div>
+    </div>
+
+    <div class="buttons">
+      <button id="restart">🔁 Restart</button>
+      <button id="submit">✅ Submit</button>
+    </div>
+    <footer>
+      <p>&copy; 2025 <span id="author-name">Deepak Rao</span>. All rights reserved.</p>
+    </footer>
+
+    <p id="message">Succesfully complete</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
